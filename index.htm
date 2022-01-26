@@ -1,0 +1,553 @@
+<!-- FD7DFF A568E8 7F83FF 68ABE8 80FFFD
+4789B3 FF8F8F 80CEFF FFFD66 B3B150
+FFA096 E689E8 BAA3FF 89B5E8 89FFEA -->
+
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(69339949, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true
+	});
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/69339949" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+<link rel="preload" as="image" href="projects/mini2.jpg">
+<link rel="preload" as="image" href="projects/capsula2.jpg">
+<link rel="preload" as="image" href="projects/camerahub2.jpg">
+<link rel="preload" as="image" href="projects/ace0302.jpg">
+<link rel="preload" as="image" href="projects/lidar2.jpg">
+<link rel="preload" as="image" href="projects/rtk2.jpg">
+
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #272822;
+}
+
+#main_container {
+	background-color: inherit;
+	/* height: 100%; */
+}
+
+header {
+	/* width: 100%; */
+	padding-top: 5px;
+	padding-bottom: 0px;
+	background-color: #222;
+	/* transform: translateZ(-1px) scale(1.5); */
+}
+.center {
+	text-align: center;
+}
+.nickname {
+	color: #AE81FF;
+	font: 50px/1 Helvetica, sans-serif;
+	font-family: 'Itim', cursive;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+}
+article {
+	width: 960px;
+	/* height: 100%; */
+	margin: 0px auto;
+	padding-top: 10px;
+	padding-bottom: 70px;
+	font: 18px/1.4 Helvetica, sans-serif;
+}
+.container {
+	color: #ddd;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.left  { width: 245px; text-align: left; }
+.right { width: 700px; text-align: left; }
+p { margin-block-start: 0em; margin-block-end: 0.6em; }
+a { color: #E6DB74; }
+a:visited { color: inherit; }
+.comment{ color: #75715E; }
+.red	{ color: #F92672; }
+.orange	{ color: #FD971F; }
+.lorange{ color: #E69F66; }
+.yellow	{ color: #E6DB74; }
+.green	{ color: #A6E22E; }
+.blue	{ color: #66D9EF; }
+.purple	{ color: #AE81FF; }
+img { width: 100%; border-radius: 5px; }
+#avatar { margin-top: 7px; }
+#cloud  { margin: 27px 0; }
+.social_media { width: 30px; height: 30px; object-fit: contain; }
+.header {
+	text-align: center;
+	color: #ddd;
+	font: 2em/1.5 Helvetica, sans-serif;
+	font-weight: 700;
+	margin: 30px 0 20px 0;
+}
+
+#wechat { background-color: inherit; }
+.white { background-color: #fff; }
+.social_round { border-radius: 15px; }
+#github { border: 1px solid #fff; width: 28px; height: 28px; }
+
+b { font-weight: 600; }
+
+.photo {
+	width: 245px;
+	height: 245px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 5px;
+	/* box-shadow: 0 0 20px #000; */
+}
+.project_card { margin-top: 7px; }
+
+#avatar { background-image: url("avatar.jpg"); }
+#avatar:hover { background-image: url("avatar2.jpg"); }
+
+#project_mini { background-image: url("projects/mini.jpg"); }
+#project_mini:hover { background-image: url("projects/mini2.jpg"); }
+
+#project_capsula { background-image: url("projects/capsula.jpg"); }
+#project_capsula:hover { background-image: url("projects/capsula2.jpg"); }
+
+#project_camerahub { background-image: url("projects/camerahub.jpg"); }
+#project_camerahub:hover { background-image: url("projects/camerahub2.jpg"); }
+
+#project_grafana { background-image: url("projects/grafana.png"); }
+#project_grafana:hover { background-image: url("projects/grafana.png"); }
+
+#project_ace030 { background-image: url("projects/ace030.jpg"); }
+#project_ace030:hover { background-image: url("projects/ace0302.jpg"); }
+
+#project_lidar { background-image: url("projects/lidar.jpg"); }
+#project_lidar:hover { background-image: url("projects/lidar2.jpg"); }
+
+#project_rtk { background-image: url("projects/rtk.jpg"); }
+#project_rtk:hover { background-image: url("projects/rtk2.jpg"); }
+
+#project_meetup { background-image: url("projects/meetup.jpg"); }
+#project_meetup:hover { background-image: url("projects/meetup.jpg"); }
+
+#project_amper { background-image: url("projects/amper.jpg"); }
+#project_amper:hover { background-image: url("projects/amper.jpg"); }
+
+#contents {
+	position: fixed;
+	margin-left: 960px;
+	background-color: inherit;
+	color: #bbb;
+	width: 100px;
+	top: 0px;
+	bottom: 0px;
+}
+
+#svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 55px;
+	height: 100%;
+}
+.point a { font: 1em/1.5 Helvetica, sans-serif; color: #E6DB74; text-decoration: none; }
+.point a:visited { color: #E6DB74; text-decoration: none; }
+
+#path1, #path2, #path3, #path4, #path5 { stroke-width: 2px; stroke: #bbb; fill-opacity: 0.0; }
+
+/* #one{
+  top: 20px;
+  left: 50px;
+}
+
+#two{
+  bottom: 20px;
+  right: 50px;
+} */
+
+#cont2 { min-height: 275px; }
+
+.point { margin-left: 55px; }
+.point:first-child { margin-top: 78px; }
+
+.ribbon_holder {
+	overflow: hidden;
+	position: relative;
+	top: -245px;
+	left: 0px;
+	height: 70px;
+}
+.ribbon {
+	position: relative;
+	top: 10px;
+	left: -23px;
+	transform: rotate(-45deg);
+	width: 90px;
+	background-color: #A6E22E;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#A6E22E), to(#8dc735));
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	color: #272822;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 0 2px #570;
+	/* border: 1px #7b0 solid; */
+}
+
+.photo_holder { max-height: 245px; }
+
+li:not(:last-of-type) { margin-bottom: 0.5em; }
+
+</style>
+<head>
+	<title>Nikolay Gorbunov's CV</title>
+</head>
+
+<script
+	src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+	crossorigin="anonymous"></script>
+
+<script>
+	const clearance = 6;
+	draw_menu = function() {
+		draw_line = (level, path, div1, div2) => {
+			var off = svg.offset();
+			var x0 = div1.offset().left - off.left - 9;
+			var y0 = div1.offset().top + div1.height() / 2 - off.top + 1.5;
+			var x1 = x0 - 10 - clearance * level;
+			// console.log(x0, x1)
+			var x2 = 7;
+			var y2 = div2.offset().top + div2.height() / 2 - off.top + 1;
+			const quant = 10;//20;
+			y2 = Math.round(y2 / quant) * quant;
+			var corner = 5 + 3 * (level + 0);
+			if((y0+corner < y2-5 - 3) || (y0-corner > y2+5+3))
+				path.attr('d', `M${x0} ${y0-0.3} \
+					A3 3 90 1 1 ${x0} ${y0} \
+					L${x1+corner} ${y0} \
+					L${x1} ${(y0 < y2) ? y0+corner : y0-corner} \
+					L${x1} ${(y0 > y2) ? y2+5 : y2-5} \
+					L${x1-5} ${y2} \
+					L${x2} ${y2} \
+					A3 3 180 1 1 ${x2} ${y2-0.3}`);
+			else
+				path.attr('d', `M${x0} ${y0-0.3} \
+					A3 3 90 1 1 ${x0} ${y0} \
+					L${x1+corner} ${y0} \
+					L${x1+corner + ((y0 < y2) ? y0-y2 : y2-y0)} ${y2} \
+					L${x2} ${y2} \
+					A3 3 180 1 1 ${x2} ${y2-0.3}`);
+		}
+		if(	$('#point_vision').offset().top + $('#point_vision').height() / 2 <
+			$('#block_vision').offset().top + $('#block_vision').height() / 2) {
+			draw_line(2, $('#path1'), $('#point_about'), $('#block_about'));
+			draw_line(3, $('#path2'), $('#point_projects'), $('#block_projects'));
+			draw_line(2, $('#path3'), $('#point_vision'), $('#block_vision'));
+			draw_line(1, $('#path4'), $('#point_hobbies'), $('#block_hobbies'));
+			draw_line(0, $('#path5'), $('#point_personal'), $('#block_personal'));
+		} else {
+			if(	$('#point_hobbies').offset().top + $('#point_hobbies').height() / 2 <
+				$('#block_hobbies').offset().top + $('#block_hobbies').height() / 2) {
+				draw_line(1, $('#path1'), $('#point_about'), $('#block_about'));
+				draw_line(2, $('#path2'), $('#point_projects'), $('#block_projects'));
+				draw_line(3, $('#path3'), $('#point_vision'), $('#block_vision'));
+				draw_line(1, $('#path4'), $('#point_hobbies'), $('#block_hobbies'));
+				draw_line(0, $('#path5'), $('#point_personal'), $('#block_personal'));
+			} else {
+				if(	$('#point_personal').offset().top + $('#point_personal').height() / 2 <
+					$('#block_personal').offset().top + $('#block_personal').height() / 2) {
+					draw_line(0, $('#path1'), $('#point_about'), $('#block_about'));
+					draw_line(1, $('#path2'), $('#point_projects'), $('#block_projects'));
+					draw_line(2, $('#path3'), $('#point_vision'), $('#block_vision'));
+					draw_line(3, $('#path4'), $('#point_hobbies'), $('#block_hobbies'));
+					draw_line(1, $('#path5'), $('#point_personal'), $('#block_personal'));
+				} else {
+					draw_line(0, $('#path1'), $('#point_about'), $('#block_about'));
+					draw_line(1, $('#path2'), $('#point_projects'), $('#block_projects'));
+					draw_line(2, $('#path3'), $('#point_vision'), $('#block_vision'));
+					draw_line(3, $('#path4'), $('#point_hobbies'), $('#block_hobbies'));
+					draw_line(4, $('#path5'), $('#point_personal'), $('#block_personal'));
+				}
+			}
+		}
+	}
+	$(window).on('load', function() {
+		svg = $('svg');
+		draw_menu();
+		$(window).scroll(function() {
+			draw_menu();
+		})
+	})
+</script>
+
+<a id="about"><header class="center"></a>
+		<span class="nickname">Nikolay "catethysis" Gorbunov</span>
+		<!-- <div class="container">
+			<div id="nickname" class="left">catethysis</div>
+			<div id="nickname" class="right">Nikolay Gorbunov</div>
+		</div> -->
+	</header>
+<div id="main_container">
+	<article>
+		<div id="contents">
+			<div id="point_about" class="point"><a href="#about">about</a></div>
+			<div id="point_projects" class="point"><a href="#projects">projects</a></div>
+			<div id="point_vision" class="point"><a href="#vision">vision</a></div>
+			<div id="point_hobbies" class="point"><a href="#hobbies">hobbies</a></div>
+			<div id="point_personal" class="point"><a href="#personal">personal</a></div>
+			<svg id="svg">
+				<path id="path1"/>
+				<path id="path2"/>
+				<path id="path3"/>
+				<path id="path4"/>
+				<path id="path5"/>
+			</svg>
+		</div>
+		<div class="container">
+			<div class="left" id="block11">
+				<div class="photo_holder">
+				<!-- <img src="avatar.jpg" id="avatar" /> -->
+					<div class="photo" id="avatar"></div>
+					<div class="ribbon_holder"><div class="ribbon">WiP</div></div>
+				</div>
+				<img src="cloud2.png"  id="cloud"  />
+				<div class="container">
+					<a href="https://www.linkedin.com/in/catethysis/"><img src="social/linkedin.svg" class="social_media white"/></a>
+					<a href="mailto:catethysis@gmail.com"><img src="social/google.svg" class="social_media"/></a>
+					<a href="https://t.me/Catethysis/"><img src="social/telegram.svg" class="social_media"/></a>
+					<a href="https://hh.ru/resume/c11d083fff00d774f90039ed1f364b70375770/"><img src="social/hhru.svg" class="social_media"/></a>
+					<a href="https://www.thingiverse.com/catethysis/"><img src="social/thingiverse.svg" class="social_media"/></a>
+					<a href="social/wechat_id.jpg"><img src="social/wechat.svg" class="social_media" id="wechat"/></a>
+					<a href="https://github.com/Catethysis"><img src="social/github.svg" class="social_media white social_round" id="github"/></a>
+				</div>
+			</div>
+			<div class="right" id="block12">
+				<p><span id="block_about"><b>Embedded electronics developer</b></span> who worked at the top Russian Internet companies: <span class="yellow"><a href="https://corp.mail.ru/">Mail.ru</a></span>, <span class="yellow"><a href="https://yandex.ru/company/">Yandex</a></span>, startups and others for 10+ years, studied in Moscow State University.<br>I have established one of the largest Russian-speaking electronics development community with many cities branches: Moscow, St. Petersburg, Ekaterinburg, and Kyiv.</p>
+				<p>I solve business HW requests as a <span class="lorange">Technical Leader</span>, finding new HW opportunities for current and future projects, and searching ways to reduce the BOM. I have hands-on experience with schematics, <span class="lorange">PCB&nbsp;design, STM32 embedded FW</span>, and embedded Linux.</p>
+				<p>I have <span class="lorange">technically managed</span> two consumer electronic products from the concept to the mass&nbsp;production stage (~100k pcs). I have established communication with the part vendors, solution providers, and other contractors to maintain our connection with them in order to solve problems together. I can find and order ~anything in China. I can solve complex troubles between mechanics, electronics, acoustics, RF, and ID as an <span class="lorange">Expert</span>.</p><p>
+				<span class="red">Complex issues?</span> My backpack is always with me to go to solve it directly in China &mdash; but I finished one consumer device project remotely from home during COVID-19.</p>
+				<p>My <span class="lorange">core skills</span> are Electronics, C, MCU/MPU, STM32, Sound design, PCB design, SDR, FPGA, Self-driving cars, RF antennae, Consumer electronics, Mechanical/plastic design for manufacturing, 3D Printing; Altium Designer, Fusion 360, Node.js, React, Linux, HFSS;<br>Fairly fluent <span class="lorange">spoken English</span>, native Russian; I'm a team player as well as a team leader.</p>
+				<p>I know all common 3D print technologies (even metal), know how to prepare programs, take wanted weight/strength/shrinkage into account and never forget about tolerances :)</p>
+			</div>
+		</div>
+
+		<a id="projects"><div class="header" id="block_projects">My key projects</div></a>
+		<div id="projects_holder">
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_microphone"></div>
+						<div class="ribbon_holder"><div class="ribbon">2021</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green">Premium acoustic device</span> concept done in 3 month with the other devices research.</p>
+					<p>This project goal was to create a novel Hi-End acoustic device to outperform the existing market and show that it can be a market with the modern approach.</p>
+					<p>I was an <span class="lorange">engineering consultant</span> on this project, helping to develop the vision, establishing the processes, finding an engineers, and finally becomes a co-founder.</p>
+					<p>But mostly it was the team/lab building and MVP/EVT creation for further improvement.<br>I made full mechanical design and helped our industrial designer to make the look&feel.<br>I found engineers for PCB and acoustic design, Embedded Linux dev, and proposed a nonstandard solution (unusual acoustic scheme) which gives us <span class="lorange">the best performance</span>.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_mini"></div>
+						<div class="ribbon_holder"><div class="ribbon">2020</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green">Mail.ru future smart speaker</span> done by our team in 6 months.</p>
+					<p>I am a <span class="lorange">Technical Lead</span> on this project with the full responsibility of every board and the whole device HW. Two FPC was the only mine and the other board control/review.</p>
+					<p>There were controversial demands at thermal and RF/EMF compatibility in the device's HW that I have solved. I have sourced the best Wi-Fi+BT modules at the lowest price. Touchpad and RF were my responsibilities as well, and mechanics was partly mine too: I had designed PCBAs initial shape and troubleshot encountered mechanical issues.</p>
+					<p>I <span class="lorange">invented</span> a modern on-board rounded 2.5-band Wi-Fi+BT antennae that are not only very cost effective but even work better than the external dipole. Used it for this project.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_capsula"></div>
+						<div class="ribbon_holder"><div class="ribbon">2019</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green"><a class="project" href="https://capsula.mail.ru/">Mail.ru Capsula smart speaker</a></span> made of ~100k pcs, done by our team in 1 year.</p>
+					<p>I have established regular communication with a Chinese design house. I owe the issue solving flow, and have prepared the initial Buildroot Linux image + CI/CD and testing.</p>
+					<p>After this, I became a project <span class="lorange">Technical Leader</span>, initiated regular business trips to China to solve issues locally. I passed the project through EVT, DVT, and PVT stages, and finally, brought it to mass production. The next thing was the production tests setup, where I prepared testing chambers HW, reports storage, and a production dashboard.</p>
+					<p>I developed one project part by myself: LED board with an STM32 MCU that supports FW update, works with RFID IC and light sensor, and shows device boot animation.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_camerahub"></div>
+						<div class="ribbon_holder"><div class="ribbon">2018</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green"><a href="https://www.popmech.ru/vehicles/432502-gorodskoy-test-drayv-bespilotnogo-avtomobilya/">Camera hub for Yandex Self-driving car</a></span> done by myself in 2 weeks.</p>
+					<p>Self-driving cars need to see around, and the minimal set is five fish-eye cameras + 1 LiDAR. Our cameras have a 3 Gbps GMSL link with the power + I2C on the same line.</p>
+					<p>I developed a device that connects six cameras, provides controlled filtered power, setup cameras via I2C, and receive 3 Gbps pixel data. This data stream converts to MIPI CSI (MAX9286 IC) for Nvidia Jetson TX2 through twenty 500 Mbps LVDS links.<br>Battery power goes via monolithic power conditioner, channel filters, and FETs.</p>
+					<p>I finished it in <span class="lorange">just two weeks</span>, it did not need any debug, and was deployed to many cars. It was featured in the Russian hobbyist's magazine "Popular mechanics".</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_rtk"></div>
+						<div class="ribbon_holder"><div class="ribbon">2018</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green">RTK-GNSS receiver</span> for Yandex Self-driving car</p>
+					<p>GNSS receiver board with Intel Galileo mounting on the bottom with RTK algorithms running on it. We bought an RTK-GNSS receiver before but were never satisfied with the signal level, data quality, and mostly the price.</p>
+					<p>I have developed a substitution board and precisely routed the UHF RF part to ensure the lowest signal losses, resulting in <span class="lorange">+5 dB signal level improvement</span>. As an extra feature, USB has been added for FW updates and debugging.</p>
+					<p>The better matching with an antenna and filtering also reduced external USB3 interferences, and eliminated noise. Also I tried some RTK algorythms on this board.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_amper"></div>
+						<div class="ribbon_holder"><div class="ribbon">2017</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green">Wireless energy meter</span> for <span class="yellow"><a href="http://strij.tech/">Strij.tech</a></span></p>
+					<p>Not an usual project because we have needed to resurrect a legacy project after our predecessor company. We did it from scratch in just a half a year.</p>
+					<p>My <span class="lorange">personal breakthrough</span> was the meter accurracy achieved: it was not exceed 0.1% over the full range, and this precision has been proved in an external testing laboratory.<br>My other part was a display and a log storing in the SPI flash + RS-485 service port.<br>The last thing was the measurements accumulating and broadcasting the data to an external reader through the UWB link.</p>
+					<p>I like how this project was done.<br></p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="left">
+					<div class="photo_holder">
+						<div class="photo project_card" id="project_ace030"></div>
+						<div class="ribbon_holder"><div class="ribbon">2016</div></div>
+					</div>
+				</div>
+				<div class="right">
+					<p><span class="green">RFID reader</span> made on ~10k pcs, done by our team (me + companion) in 7 months.</p>
+					<p>RFID reading boards for cashless transfers as external gambling machine HW. I had developed schematics/PCB, tuned RF path, and did an FW part, while my colleague implemented LED control API and refactored my initial code in a class manner.</p>
+					<p>After this, I implemented the <span class="lorange">on-the-air update</span> using bootloader, added update image scrambling, and forward error correction by Reed-Solomon encoding.</p>
+					<p>This OTA technology was so <span class="lorange">reliable and stable</span> that I presented it during the lecture at one of my offline community meetups in Yandex. One company asked me to use my techniques to implement it in their devices; and I used it in my next products too.</p>
+				</div>
+			</div>
+			<!-- <div class="container">
+				Small one-day projects:<br>
+				<ul>
+					<li>Electric scooter FW update reverse engineering</li>
+				</ul>
+			</div> -->
+
+			<a id="vision"><div class="header" id="block_vision">My vision</div></a>
+			<div class="container">
+				<p>I love consumer electronics and embedded development, and I have accumulated so much experience that I want to share my expertise to make the best future together. My people network is wide, so I can easily find the best specialist to enhance our team.</p>
+				<p>My passion is to be an expert and also a mentor over fellow developers. I like to spread my knowledge, that's why I authored a blog and took a number of apprentices.</p>
+				<p>I am basically a electronic developer but trying to collect as much as possible experience from adjacent areas like web design, mechanics, networking and others.</p>
+			</div>
+
+			<a id="hobbies"><div class="header" id="block_hobbies">My hobby projects</div></a>
+			<div id="projects_holder">
+				<div class="container">
+					<div class="left">
+						<div class="photo_holder">
+							<div class="photo project_card" id="project_lidar"></div>
+							<div class="ribbon_holder"><div class="ribbon">2020</div></div>
+						</div>
+					</div>
+					<div class="right">
+						<p><span class="green">LiDAR</span></p>
+						<p>My first experiment on LiDAR ToF techniques with high power pulsed IR laser diode and the Avalanche photodiode with high voltage offset. Extra short laser pulses formed with STM32G0 high-resolution PWM, and light flight time was measured by the ToF IC.</p>
+						<p>A custom power source was designed to provide extra low inductance energy storage for the laser circuitry, and the other source provided the high voltage for APD offset. Other sources provided low-noise power for analog circuitry. I 3D printed a lens mount.</p>
+						<p>An unusual PCB design ensures minimal voltage overshoot on each laser pulse. It was a <span class="lorange">complicated project</span> due to low-ESL components and tricky schematics.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="left">
+						<div class="photo_holder">
+							<div class="photo project_card" id="project_grafana"></div>
+							<div class="ribbon_holder"><div class="ribbon">2019</div></div>
+						</div>
+					</div>
+					<div class="right">
+						<p><span class="green">Smart home CAN system</span> and sensors mesh.</p>
+						<p>I liked CAN bus through all of my vehicle electronics experience: it is a fast and reliable link with built-in priority. Of course, it is my Smart home automation bus.</p>
+						<p>It have the gate to home Ethernet and <span class="lorange">server running on Node.js</span>. I did a scripting engine in an event style that allows to run any action at any trigger and supports composite nested sync and async actions. Like "Morning weighing triggers DB storing and weather report + quote of the day + financial info goes to the thermal printer".</p>
+						<p>Sensors data also goes through Prometheus requests to Grafana data pool + some processing + alerts. It works with Mail.ru <span class="lorange">smart speaker</span> and controlled by voice too.</p>
+					</div>
+				</div>
+				<!-- <div class="container">
+					<div class="left">
+						<div class="photo_holder">
+							<div class="photo project_card" id="project_grafana"></div>
+							<div class="ribbon_holder"><div class="ribbon">2018</div></div>
+						</div>
+					</div>
+					<div class="right">
+						<p><span class="green">ARM SoC cluster</span></p>
+					</div>
+				</div> -->
+				<div class="container">
+					<div class="left">
+						<div class="photo_holder">
+							<div class="photo project_card" id="project_meetup"></div>
+							<div class="ribbon_holder"><div class="ribbon">2017</div></div>
+						</div>
+					</div>
+					<div class="right">
+						<p><span class="green">Embedded electronics community meetups.</span></p>
+						<p>Last but not least of my heart's projects is my community: all of these guys who go with me for years and form the electronics dream team.</p>
+						<p>I am uniting very different people, so all my community has divided into some parts. <a href="https://t.me/telecatethysis_main">Main telegram chat</a> where the only electronics is discussed, <a href="https://t.me/telecatethysis_flood">other telegram chat</a> for electronics, flood, and 18+ themes are discussed, and also a <a href="https://vk.com/catethysis_ru">VK group</a> for electronics.</p>
+					</div>
+				</div>
+
+			<a id="personal"><div class="header" id="block_personal">Personal and highlights</div></a>
+			<div class="container">
+				<ul>
+					<li>Studied at <span class="yellow"><a href="https://www.msu.ru/en/">Moscow State Lomonosov University</a></span> as a researcher in computational chemistry.</li>
+					<li>Worked at a <span class="lorange">startup-like departments</span> of Yandex and Mail.ru for ~3 years.</li>
+					<li><span class="lorange">Awarded</span> in a Mail.ru People Awards as a developer of a Smart speaker, leader of a Mail.ru internal startups contest.</li>
+					<li>Live in Moscow now but looking for opportunities <span class="lorange">worldwide</span>: I adore Amsterdam and Berlin, visited Shenzhen for 5+ times but I always wanted to come to the USA.</li>
+					<li>Prefer to work remotely from home: I have a <span class="lorange">fully-equipped</span> electronics lab at home with soldering stations, rapid scope, power supplies, logic analyzers, microscope, 3D printer, and other lab devices, so I can do <span class="lorange">a lot of research</span> here.</li>
+					<li>Supports distributed computing projects like BOINC for proteins folding, has the <span class="yellow"><a href="https://boinc.bakerlab.org/rosetta/show_user.php?userid=2156994">gold badge</a></span> in the Fold-for-Covid team.</li>
+					<li>Not only a developer but also a successful (> +50% Y-Y) qualified private investor, landlord, proud master, and furry.</li>
+					<li>Love dark electro, hardstyle, and witch-house music, playing electro guitar, bass guitar, and piano as a beginner.</li>
+					<li>Prefer to use Macbook Pro and Linux to do all my work.</li>
+				</ul>
+			</div>
+		</div>
+	</article>
+	<!-- <footer>
+		Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+	</footer> -->
+</div>
